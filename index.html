@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DryWet — Clean, Refresh, Dry in One Swipe</title>
+  <meta name="description" content="DryWet is a dual‑surfaced wipe that cleans, refreshes, and dries in one swipe—designed with dermatology and clinical settings in mind.">
+  <link rel="icon" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">DryWet</a>
+      <nav>
+        <a href="#product">Product</a>
+        <a href="#story">Story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Clean. Refresh. Dry.<br><span class="accent">One swipe.</span></h1>
+        <p class="lead">A patent‑pending, dual‑surfaced wipe engineered for sensitive skin and clinical care. Wet on one side, dry on the other. Less waste, better hygiene.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#waitlist">Join the waitlist</a>
+          <a class="btn ghost" href="#product">Learn more</a>
+        </div>
+        <p class="subtext">Launching soon on Kickstarter.</p>
+      </div>
+      <div class="hero-media">
+        <img src="/assets/hero-mock.png" alt="DryWet dual-surfaced wipe mockup" />
+      </div>
+    </section>
+
+    <section id="product" class="container grid two">
+      <div>
+        <h2>Why DryWet?</h2>
+        <ul class="feature-list">
+          <li><strong>Dual-surface efficiency:</strong> wet side cleans, dry side finishes—no second product.</li>
+          <li><strong>Derm‑friendly:</strong> inspired by atopic‑dermatitis care; no harsh residues.</li>
+          <li><strong>Clinic‑ready:</strong> designed for patient rooms, kits, and on‑the‑go hygiene.</li>
+          <li><strong>Lower waste:</strong> fewer wipes used per task and recyclable packaging goals.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Specs (prototype)</h3>
+        <dl class="specs">
+          <dt>Wet side</dt><dd>100% viscose, 45 GSM</dd>
+          <dt>Dry side</dt><dd>Cotton/viscose options under test</dd>
+          <dt>Size</dt><dd>To be finalized</dd>
+          <dt>Status</dt><dd>Supplier sampling & testing</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="story" class="container">
+      <div class="card">
+        <h2>Our story</h2>
+        <p>Founded by a pre‑med and clinical researcher who saw, firsthand, the need for a simple, skin‑friendly solution in hospitals and everyday life. DryWet aims to improve hygiene access for underserved communities while reducing waste in clinical settings.</p>
+      </div>
+    </section>
+
+    <section id="waitlist" class="container">
+      <div class="card">
+        <h2>Get updates</h2>
+        <p>We’ll email when DryWet launches and when samples are ready for testing.</p>
+        <form name="waitlist" method="POST" data-static-form>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <button class="btn primary" type="submit">Notify me</button>
+          <p class="form-note">No spam. Unsubscribe anytime.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <div class="grid two">
+        <div>
+          <h2>Contact</h2>
+          <p>Questions or partnership inquiries? Reach out:</p>
+          <p><a href="mailto:hello@drywetwipe.com">hello@drywetwipe.com</a></p>
+        </div>
+        <div class="card tiny">
+          <h3>Follow</h3>
+          <ul class="social">
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> DryWet. All rights reserved.</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
