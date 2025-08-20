@@ -35,6 +35,12 @@ nav a:hover{ color:var(--text); }
 /* Hero */
 .hero{ display:grid; grid-template-columns:1.1fr .9fr; gap:36px; padding:56px 0 40px; align-items:center; }
 .hero-text h1{ font-size:clamp(2.2rem,4vw,3.2rem); line-height:1.05; margin:0 0 12px; }
+.hero-text h1 .accent{
+  color: #16a34a;                /* <-- choose your color */
+  background: none;              /* turn off the gradient */
+  -webkit-background-clip: initial;
+  background-clip: initial;
+}
 .lead{ color:var(--muted); font-size:1.05rem; }
 .cta-row{ display:flex; gap:12px; margin:20px 0 8px; }
 .btn{ display:inline-block; padding:12px 18px; border-radius:14px; text-decoration:none; font-weight:600; border:1px solid transparent; }
