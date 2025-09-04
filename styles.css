@@ -88,6 +88,31 @@ form .btn{ height:44px; }
   text-shadow:none;
 }
 
+/* CTA buttons */
+.cta-row{ display:flex; gap:12px; margin:20px 0 8px; }
+
+a.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:12px 18px; min-width:160px; line-height:1;
+  border-radius:14px; font-weight:700; text-decoration:none;
+  border:1px solid transparent;
+}
+
+a.btn.primary{
+  background: linear-gradient(180deg, #2563eb, #1e40af);
+  color:#fff !important;           /* ensures text is visible */
+  border-color: transparent;
+  box-shadow:0 8px 20px rgba(37,99,235,.20);
+}
+
+a.btn.ghost{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  color:#0b1220 !important;
+}
+
+a.btn.primary:hover{ filter:brightness(.95); }
+a.btn.ghost:hover{ background:#f1f5f9; }
 .social{ list-style:none; padding:0; margin:0; display:flex; gap:14px; }
 
 @media (max-width:900px){
